@@ -92,10 +92,10 @@
             const orderId = document.getElementById('orderIdDisplay').textContent.split(': ')[1];
             if (contact.includes('@')) { // Assumes input is an email if it contains '@'
                 const subject = encodeURIComponent('Your Order ID');
-                const body = encodeURIComponent(`Your Order ID is: ${orderId}. This ID will be used in all communications regarding your order.`);
+                const body = encodeURIComponent(`Your Order ID is: ${orderId}. This ID will be used in all communications regarding your order.Thanks and Warm Regards,SRINIVASA PHARMACEUTICALS.`);
                 window.location.href = `mailto:${contact}?subject=${subject}&body=${body}`;
             } else { // Assumes input is a phone number otherwise
-                const body = encodeURIComponent(`Your Order ID is: ${orderId}. This ID will be used in all communications regarding your order.`);
+                const body = encodeURIComponent(`Your Order ID is: ${orderId}. This ID will be used in all communications regarding your order.Thanks and Warm Regards,SRINIVASA PHARMACEUTICALS.`);
                 window.location.href = `sms:${contact}?body=${body}`;
             }
         });
